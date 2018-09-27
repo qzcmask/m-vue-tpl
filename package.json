@@ -1,0 +1,17 @@
+{
+  "name": "m-vue-tpl",
+  "version": "0.0.2",
+  "description": "A command line to init vue's project basic structure",
+  "main": "index.js",
+  "bin": {
+    "m-vue-tpl": "bin/m-vue-tpl.js"
+  },
+  "keywords": [
+    "command",
+    "line",
+    "vue-template",
+    "vue-structure"
+  ],
+  "author": "Mask 923746590@qq.com",
+  "license": "MIT"
+}
