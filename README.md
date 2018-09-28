@@ -1,5 +1,5 @@
 ## m-vue-tpl
-'m-vue-tpl' is a command line to generate vue project structure automatically.
+`m-vue-tpl` is a command line to generate vue project structure automatically.
 
 ## Usages
 
