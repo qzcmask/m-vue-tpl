@@ -42,7 +42,7 @@ const run = (args) => {
   switch (option) {
     case '-v':
     case "--version":
-      console.log(`v${packageJson.version}`)
+      console.log(`v${packageJson.version}
       break
 
     case '-n':
