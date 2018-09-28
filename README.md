@@ -1,4 +1,4 @@
-## m-vue-tpl
+# m-vue-tpl
 `m-vue-tpl` is a command line to generate vue project structure automatically.
 
 ## Usages
@@ -9,7 +9,7 @@
 npm i m-vue-tpl -g
 ```
 
-#### init project structure:
+### Init project structure
 
 ```
 m-vue-tpl -n projectName
@@ -24,7 +24,7 @@ npm run dev or npm run build
 npm run server
 ```
 
-#### other commands
+### Other commands
 
 ```
 m-vue-tpl -v
@@ -34,7 +34,7 @@ m-vue-tpl -h
 m-vue-tpl --help
 ```
 
-### Contact
+## Contact
 
 Author: Mask
 
