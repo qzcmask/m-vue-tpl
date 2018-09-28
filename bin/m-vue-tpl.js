@@ -2,6 +2,7 @@
 const fs = require('fs')
 const path = require('path')
 const currentPath = process.cwd()
+const packageJson = require('../package')
 
 /**
  * Copy one dir to another
@@ -41,7 +42,7 @@ const run = (args) => {
   switch (option) {
     case '-v':
     case "--version":
-      console.log('v0.0.1')
+      console.log(`v${packageJson.version}`)
       break
 
     case '-n':
