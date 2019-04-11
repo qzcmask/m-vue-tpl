@@ -10,8 +10,6 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const config = require('../config')
 const utils = require('./utils')
 const baseWebpackConfig = require('./webpack.base.config')
-// vendorConfig is a path reflect of bundled js file, such as dll
-const vendorConfig = require('../vendor-config.json')
 
 module.exports = webpackMerge(baseWebpackConfig, {
   mode: 'production',
@@ -89,7 +87,6 @@ module.exports = webpackMerge(baseWebpackConfig, {
       filename: config.build.index,
       template: config.dev.templatePath,
       inject: true,
-      bundleName: vendorConfig.vendor.js,
       minify: {
         removeComments: true,
         collapseWhitespace: true,

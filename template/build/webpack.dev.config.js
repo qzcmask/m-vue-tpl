@@ -4,7 +4,6 @@ const webpackMerge = require('webpack-merge')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const config = require('../config')
 const baseWebpackConfig = require('./webpack.base.config')
-const vendorConfig = require('../vendor-config.json')
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
@@ -55,8 +54,7 @@ module.exports = webpackMerge(baseWebpackConfig, {
     new HTMLWebpackPlugin({
       filename: 'index.html',
       template: config.dev.templatePath,
-      inject: true,
-      bundleName: vendorConfig.vendor.js
+      inject: true
     })
   ]
 })

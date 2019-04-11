@@ -1,10 +1,7 @@
 const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
-const webpack = require('webpack')
-const HappyPack = require('happypack')
 const utils = require('./utils')
 const config = require('../config')
-const manifest = require('../vendor-manifest.json')
 const isDev = process.env.NODE_ENV === 'development'
 
 function resolve(dir) {
@@ -62,8 +59,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        loader: 'happypack/loader?id=js',
-        // loader: 'babel-loader',
+        loader: 'babel-loader',
         include: [resolve('src'), resolve('test')],
         exclude: /node_modules/
       },
@@ -112,20 +108,6 @@ module.exports = {
     //     NODE_ENV: isDev ? '"development"' : '"production"'
     //   }
     // }),
-    new VueLoaderPlugin(),
-    new HappyPack({
-      id: 'js', // the unique identity of happyPack loader, representing a kind of file type
-      // same as webpack loaders' rules
-      loaders: [{
-        loader: 'babel-loader'
-      }],
-      // print the log
-      verbose: true,
-      // thread number, default 3
-      threads: 4
-    }),
-    new webpack.DllReferencePlugin({
-      manifest
-    })
+    new VueLoaderPlugin()
   ],
 }

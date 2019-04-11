@@ -16,7 +16,6 @@ m-vue-tpl -n projectName
 m-vue-tpl --new projectName
 
 cd projectName && npm install
-npm run dll
 npm run dev or npm run build
 
 // if you want to start the server, you can do as follows

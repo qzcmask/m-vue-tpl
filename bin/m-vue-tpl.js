@@ -73,7 +73,6 @@ const run = (args) => {
         console.log(`[m-vue-tpl] execute the following commands to run you app`)
         console.log(``)
         console.log(`       cd ${projectName} && npm install`)
-        console.log(`       npm run dll`)
         console.log(`       npm run dev or npm run build`)
       }).catch(err => {
         console.log(`[m-vue-tpl] init project "${projectName}" erroneously. The reason is : ${err}`)
