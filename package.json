@@ -1,6 +1,6 @@
 {
   "name": "m-vue-tpl",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a command line to generate vue project structure automatically",
   "main": "index.js",
   "bin": {
